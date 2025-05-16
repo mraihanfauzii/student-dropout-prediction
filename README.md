@@ -76,9 +76,9 @@ Dengan adanya business dashboard ini, diharapkan Jaya Jaya Institute dapat meman
 
 <img src="https://raw.githubusercontent.com/mraihanfauzii/student-dropout-prediction/main/images/demo_model.png" width="500">
 
-Prototipe hasil pengembangan  sudah di-deploy dengan Streamlit dan dapat diakses secara online melalui [https://student-dropout-prediction-mraihanfauzii.streamlit.app/](https://student-dropout-prediction-mraihanfauzii.streamlit.app/). Cara menggunakannya untuk memprediksi apakah seorang mahasiswa akan dropout yaitu pengguna dapat memasukkan data mahasiswa seperti yang ada pada gambar sebagai input lalu menekan tombol predict, maka model akan memprediksi status mahasiswa (Dropout/Enrolled/Graduated) secara real-time. Atau jika ingin melakukannya di local maka dapat download file-file yang ada pada proyek ini dan letakan pada folder yang sama kemudian buka terminal dan jalankan perintah    ```
+Prototipe hasil pengembangan model machine learning dengan menggunakan Random Forest sudah di-deploy pada Streamlit Community dan dapat diakses secara online melalui [https://student-dropout-prediction-mraihanfauzii.streamlit.app/](https://student-dropout-prediction-mraihanfauzii.streamlit.app/). Cara menggunakannya untuk memprediksi apakah seorang mahasiswa akan dropout yaitu pengguna dapat memasukkan data mahasiswa seperti yang ada pada gambar sebagai input lalu menekan tombol predict, maka model akan memprediksi status mahasiswa (Dropout/Enrolled/Graduated) secara real-time. Atau jika ingin melakukannya di local maka dapat download file-file yang ada pada proyek ini dan letakan pada folder yang sama kemudian buka terminal dan jalankan perintah    ```
         streamlit run app.py
-    ```
+    ```. Model ini mampu memprediksi siswa beresiko dengan tingkat akurasi yang cukup baik (Test Accuracy sebesar 76%) dengan mengisi 15 fitur data yang berkaitan dengan status mahasiswa seperti nilai akademis, permasalahan finansial, data diri siswa seperti usia dan jenis kelamin, dsb.
 
 ## Conclusion
 
@@ -124,7 +124,7 @@ Masalah bisnis utama di Jaya Jaya Institute adalah tingginya tingkat dropout mah
 
 - Status berdasarkan Jalur Pendaftaran: Grafik jalur pendaftaran menunjukkan variasi keberhasilan. Mahasiswa jalur umum tahap pertama (1st phase general) mendominasi lulusan dan hanya sedikit yang dropout. Sebaliknya, mahasiswa jalur “Over 23” (berusia di atas 23 tahun) memiliki proporsi dropout yang hampir setara dengan lulusan, menandakan risiko tinggi bagi kelompok ini. Jalur seleksi lain (seperti fase 2) berada di tengah-tengah. Insight ini menunjukkan bahwa latar belakang jalur masuk (termasuk faktor usia) memengaruhi retensi, sehingga kelompok tertentu (misalnya mahasiswa dewasa) perlu perhatian khusus.
 
-Berdasarkan analisis di atas, dapat disimpulkan bahwa faktor finansial (tunggakan dan beasiswa) serta akademik (nilai awal dan jumlah mata kuliah yang ditempuh) sangat menentukan tingkat kelulusan mahasiswa. Mahasiswa yang kesulitan membayar biaya kuliah atau yang memiliki prestasi akademik rendah lebih berisiko putus studi. Dengan mengenali karakteristik mahasiswa berisiko dari visualisasi ini dan model prediksi, institusi dapat mengambil langkah pencegahan terarah.
+Berdasarkan analisis di atas, dapat disimpulkan bahwa faktor finansial (tunggakan dan beasiswa) serta akademik (nilai awal dan jumlah mata kuliah yang ditempuh) sangat menentukan tingkat kelulusan mahasiswa. Mahasiswa yang kesulitan membayar biaya kuliah atau yang memiliki prestasi akademik rendah lebih berisiko putus studi. Dengan mengenali karakteristik mahasiswa berisiko dari visualisasi ini dan model prediksi, institusi dapat mengambil langkah pencegahan terarah. Telah berhasil dibuat model machine learning dengan Random Forest yang memiliki akurasi yang cukup baik (Test Accuracy sebesar 76%) dalam memprediksi status mahasiswa yaitu dropout/graduate/enrolled yang dapat dicoba menggunakan prototype yang telah di deploy pada streamlit.
 
 ### Rekomendasi Action Items
 
@@ -150,4 +150,4 @@ Berdasarkan temuan di atas, dapat direkomendasikan beberapa langkah tindakan bag
 
 - Mode Pendaftaran : Sediakan orientasi atau mentoring khusus bagi mahasiswa dari jalur masuk berisiko tinggi (misalnya mahasiswa “Over 23” atau transfer). Hal ini bisa berupa pendampingan awal oleh alumni serupa atau kegiatan adaptasi agar mereka merasa diterima dan siap berkuliah. Evaluasi Jalur Masuk: Lakukan kajian mendalam terhadap proses seleksi dan dukungan masing-masing jalur pendaftaran. Jika ditemukan jalur tertentu memiliki angka dropout tinggi, cari faktor penyebabnya (misal kesiapan akademik atau motivasi calon) dan sesuaikan program masuk maupun bantuan sehingga retensi meningkat.
 
-Rekomendasi ini diharapkan dapat membantu institusi ini menurunkan tingkat dropout dengan pendekatan baik finansial maupun akademik.
+Rekomendasi ini diharapkan dapat membantu institusi ini menurunkan tingkat dropout dengan pendekatan baik finansial maupun akademik. 
